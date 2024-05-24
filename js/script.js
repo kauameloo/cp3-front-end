@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // banco de dados de usuários
   const users = [
     { email: "kaua@email.com", password: "kaua123", name: "Kauã de Melo" },
+    { email: "guijanunzzi@email.com", password: "gui123", name: "Guilherme Jaunzzi" }
     { email: "usuario@email.com", password: "usuario123", name: "Usuário" },
   ];
 
