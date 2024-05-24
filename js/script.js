@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (user) {
         sessionStorage.setItem("loggedInUser", JSON.stringify(user));
         loginError.textContent = "";
-
+        // mensagem de logado com sucesso
         const successMessage = document.createElement("p");
         successMessage.textContent = "Login bem-sucedido!";
         successMessage.classList.add("success-message");
@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
           window.location.href = "../index.html";
         }, 5000);
       } else {
+        // mensagem de email ou senha invalidos
         loginError.textContent = "Email ou senha inválidos.";
         setTimeout(() => {
           loginError.textContent = "";
